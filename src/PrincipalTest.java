@@ -3,17 +3,14 @@ import java.net.MalformedURLException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PrincipalTest {
+public class PrincipalTest extends Capabilities {
 
 	  private AndroidDriver driver;
-	  private WebDriverWait webDriver;
-
 
 	  @Before
 	  public void setUp() throws MalformedURLException {
-		
+		driver = capabilities();
 	  }
 
 	  @Test
